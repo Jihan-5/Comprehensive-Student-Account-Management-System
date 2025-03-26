@@ -7,17 +7,9 @@
  *
  * @author jihanmankani
  */
-public class ClassDescription {
+public class CourseEntry {
     private String CourseCode;
     private String Description;
-    private int Seats;
-    
-    public ClassDescription(String courseCode, String description, int seats){
-        this.CourseCode= courseCode;
-        this.Description= description;
-        this.Seats= seats;
-        
-    }
 
     public String getCourseCode() {
         return CourseCode;
@@ -27,9 +19,9 @@ public class ClassDescription {
         return Description;
     }
 
-    public int getSeats() {
-        return Seats;
+    public CourseEntry(String CourseCode, String Description) {
+        this.CourseCode = CourseCode;
+        this.Description = Description;
     }
-    
     
 }
